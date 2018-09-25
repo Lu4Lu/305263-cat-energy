@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Лученок](https://up.htmlacademy.ru/adaptive/15/user/305263).
-* Наставник: [Work in process].
+* Наставник: [Денис Быков](https://htmlacademy.ru/profile/id66426).
 
 ---
 
