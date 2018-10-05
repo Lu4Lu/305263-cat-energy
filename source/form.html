@@ -8,8 +8,8 @@
   <body>
 
 <!-- хедер -->
-  headeŕheadeŕheadeŕheadeŕheadeŕheadeŕheadeŕheadeŕprogram-selector__title<header class="page-header">
-    <a class="page-header__logo">classX~img´
+  <header class="page-header">
+    <a class="page-header__logo">
       <img class="page-header__logo-image" src="#" width="30" height="30" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
@@ -38,35 +38,35 @@
 программу питания для вашего кота</p>
         <small class="program-selector__legend program-selector__legend--top"><sup>*</sup> — Обязательные поля</small>
 
-<!-- форма -->
+        <!-- форма -->
         <form class="selector-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
           <fieldset class="selector-form__element">
-            <p>
+            <p class="selector-form__item">
               <label class="selector-form__label" for="name">Имя:<sup>*</sup></label>
               <input id="name" name="name" type="text" placeholder="Барсик" minlength="1" maxlength="30" required>
             </p>
 
-            <p>
+            <p class="selector-form__item">
               <label class="selector-form__label" for="weight">Вес (кг):<sup>*</sup></label>
               <input id="weight" name="weight" type="number" placeholder="7" minlength="1" required>
             </p>
 
-            <p>
+            <p class="selector-form__item">
               <label class="selector-form__label" for="age">Возраст (лет):</label>
               <input id="age" name="age" type="number" placeholder="7" minlength="1" required>
             </p>
           </fieldset>
 
           <fieldset class="selector-form__element selector-form-programs">
-            <p>
+            <p class="selector-form__item">
               <input type="radio" name="programs" value="slim" id="program-slim" class="program-radio" checked>
               <label class="program program--slim" for="program-slim">Похудение</label>
             </p>
-            <p>
+            <p class="selector-form__item">
               <input type="radio" name="programs" value="pro" id="program-pro" class="program-radio">
               <label class="program program--pro" for="program-pro">Набор массы</label>
             </p>
-            <p>
+            <p class="selector-form__item">
               <input type="radio" name="programs" value="advice" id="program-advice" class="program-radio">
               <label class="program program--advice" for="program-advice">Не знаю (Нужен ваш совет)</label>
             </p>
@@ -75,12 +75,15 @@
           <fieldset class="selector-form__element selector-form-contacts">
             <legend class="selector-form-contacts__title">Контактные данные (владельца кота)</legend>
 
-            <label class="selector-form__label" for="email">E-mail:<sup>*</sup></label>
-            <input id="email" name="email" type="email" placeholder="drone@globex.com" size="30" required>
-
-            <label class="selector-form__label" for="phone">Телефон:<sup>*</sup></label>
-            <input id="phone" name="phone" type="number" placeholder="8 (960) 900-60-90" size="30" required>
-</fieldset>
+            <p class="selector-form__item">
+              <label class="selector-form__label" for="email">E-mail:<sup>*</sup></label>
+              <input id="email" name="email" type="email" placeholder="drone@globex.com" size="30" required>
+            </p>
+            <p class="selector-form__item">
+              <label class="selector-form__label" for="phone">Телефон:<sup>*</sup></label>
+              <input id="phone" name="phone" type="number" placeholder="8 (960) 900-60-90" size="30" required>
+            </p>
+          </fieldset>
 
           <fieldset class="selector-form__element selector-form-comment">
             <legend class="selector-form-comment__title">Комментарий</legend>
@@ -91,17 +94,25 @@
 
             <legend class="selector-form-extras__title">Дополнительно</legend>
 
-            <input type="checkbox" name="extras" value="sweetener" id="extra-sweetener" class="extra-checkbox" checked>
-            <label class="selector-form__extra" for="extra-sweetener">Сахарозаменитель</label>
+            <p class="selector-form__item">
+              <input type="checkbox" name="extra-sweetener" value="sweetener" id="extra-sweetener" class="selector-form__extra-checkbox" checked>
+              <label class="selector-form__extra" for="extra-sweetener">Сахарозаменитель</label>
+            </p>
 
-            <input type="checkbox" name="extras" value="water" id="extra-water" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-water">Питьевая вода</label>
+            <p class="selector-form__item">
+              <input type="checkbox" name="extra-water" value="water" id="extra-water" class="extra-checkbox">
+              <label class="selector-form__extra" for="extra-water">Питьевая вода</label>
+            </p>
 
-            <input type="checkbox" name="extras" value="milk" id="extra-milk" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-milk">Молоко</label>
+            <p class="selector-form__item">
+              <input type="checkbox" name="extra-milk" value="milk" id="extra-milk" class="extra-checkbox">
+              <label class="selector-form__extra" for="extra-milk">Молоко</label>
+            </p>
 
-            <input type="checkbox" name="extras" value="vitamins" id="extra-vitamins" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-vitamins">Витамины</label>
+            <p class="selector-form__item">
+              <input type="checkbox" name="extra-vitamins" value="vitamins" id="extra-vitamins" class="extra-checkbox">
+              <label class="selector-form__extra" for="extra-vitamins">Витамины</label>
+            </p>
           </fieldset>
 
           <button class="btn btn__request" type="submit">Отправить заявку</button>
@@ -118,8 +129,8 @@
           <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           <div class="contacts__map" id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003015!2d30.320858715981462!3d59.93871916905433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538417385994" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003015!2d30.320858715981462!3d59.93871916905433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538417385994" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
 
           <div class="page-footer__logo">
             <img class="page-header__logo-image" src="#" width="30" height="30" alt="Кэт энерджи">
