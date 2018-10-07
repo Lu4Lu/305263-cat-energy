@@ -29,13 +29,16 @@ h2,
 h3,
 b,
 button,
-a {
-  font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+a,
+form,
+fieldset {
+  font-family: $font-family-sans-serif;
   color: $ce-text-black;
 }
 
 h1 {
   font-size: $font-size-h1;
+  line-height: 1.3;
 }
 
 h2 {
@@ -45,12 +48,14 @@ h2 {
 
 h3 {
   font-size: $font-size-h3;
+  line-height: 1.67;
 }
 
 p {
   font-family: Arial, sans-serif;
   font-size: $font-size-root;
   color: $ce-text-black-lighter;
+  line-height: 1.3;
 }
 
 button,

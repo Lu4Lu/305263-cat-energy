@@ -25,6 +25,7 @@ $ce-btn-green: #68b738;
 
 $ce-text-black: #111111;
 $ce-text-black-lighter: #444444;
+$ce-text-black-lightest: #222222;
 
 // Margins
 // With px units
@@ -52,28 +53,30 @@ $font-size-h1: 36px;
 $font-size-h2: 24px;
 $font-size-h3: $font-size-root;
 
+$font-size-16px: 16px;
+
 $button-text: 20px;
 
 $line-height: 1.35;
 
-// Forms
-
-$input-padding-x: toRem($margin-15-unitless);
-$input-padding-y: toRem($margin-10-unitless);
+// // Forms
 //
-$input-bg: rgba(255, 255, 255, 0.9);
-// $input-bg-disabled:              $gray-lighter !default;
-//
-// $input-color:                    $gray !default;
-$input-border-color: transparent;
-// $input-btn-border-width:         $border-width !default; // For form controls and buttons
-// $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
-//
-// $input-border-radius:            $border-radius !default;
-// $input-border-radius-lg:         $border-radius-lg !default;
-// $input-border-radius-sm:         $border-radius-sm !default;
-//
-$input-border-focus: transparent;
-// $input-box-shadow-focus:         rgba(102,175,233,.6) !default;
-//
-$input-color-placeholder: $m-color-red;
+// $input-padding-x: toRem($margin-15-unitless);
+// $input-padding-y: toRem($margin-10-unitless);
+// //
+// $input-bg: rgba(255, 255, 255, 0.9);
+// // $input-bg-disabled:              $gray-lighter !default;
+// //
+// // $input-color:                    $gray !default;
+// $input-border-color: transparent;
+// // $input-btn-border-width:         $border-width !default; // For form controls and buttons
+// // $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+// //
+// // $input-border-radius:            $border-radius !default;
+// // $input-border-radius-lg:         $border-radius-lg !default;
+// // $input-border-radius-sm:         $border-radius-sm !default;
+// //
+// $input-border-focus: transparent;
+// // $input-box-shadow-focus:         rgba(102,175,233,.6) !default;
+// //
+// $input-color-placeholder: $m-color-red;
