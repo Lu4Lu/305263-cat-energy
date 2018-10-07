@@ -14,14 +14,8 @@
 // Forms
 // Cards
 
-// General variable structure
-//
-// Variable format should follow the `$component-modifier-state-property` order.
-
 // Colors
 //
-// Mediatis colors
-
 $ce-white: #ffffff;
 
 $ce-gray: #f1f1f1;
@@ -32,11 +26,25 @@ $ce-btn-green: #68b738;
 $ce-text-black: #111111;
 $ce-text-black-lighter: #444444;
 
+// Margins
+// With px units
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-25: 25px;
+$margin-40: 40px;
+$margin-65: 65px;
+$margin-105: 105px;
+$margin-170: 170px;
+$margin-275: 275px;
+$margin-445: 445px;
+$margin-720: 720px;
+
 // Typography
 //
 $font-family-sans-serif: "Oswald", Helvetica, Arial, sans-serif !default;
+$font-family-bold: "Oswald Bold";
 
-// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root: 14px !default;
 $font-size-root-unitless: 14; // Do the (rem) math with the scale
 
@@ -45,3 +53,27 @@ $font-size-h2: 24px;
 $font-size-h3: $font-size-root;
 
 $button-text: 20px;
+
+$line-height: 1.35;
+
+// Forms
+
+$input-padding-x: toRem($margin-15-unitless);
+$input-padding-y: toRem($margin-10-unitless);
+//
+$input-bg: rgba(255, 255, 255, 0.9);
+// $input-bg-disabled:              $gray-lighter !default;
+//
+// $input-color:                    $gray !default;
+$input-border-color: transparent;
+// $input-btn-border-width:         $border-width !default; // For form controls and buttons
+// $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
+//
+// $input-border-radius:            $border-radius !default;
+// $input-border-radius-lg:         $border-radius-lg !default;
+// $input-border-radius-sm:         $border-radius-sm !default;
+//
+$input-border-focus: transparent;
+// $input-box-shadow-focus:         rgba(102,175,233,.6) !default;
+//
+$input-color-placeholder: $m-color-red;
