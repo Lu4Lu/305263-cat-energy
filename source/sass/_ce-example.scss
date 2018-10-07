@@ -51,7 +51,6 @@
   }
 
   .example-result__cost {
-    display: inline-block;
     font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
     font-size: $font-size-root;
   }
@@ -62,5 +61,19 @@
 
   .slider {
     display: flex;
+  }
+
+  .slider-outline {
+    width: 84px;
+    height: 14px;
+    border: 1px solid $ce-gray-dark;
+    border-radius: 6px;
+  }
+
+  .slider-fill {
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $ce-btn-green;
   }
 }
