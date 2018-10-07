@@ -1,0 +1,17 @@
+.page-footer {
+  background-color: $ce-gray;
+  padding: 0 !important;
+
+  .page-footer__wrapper {
+  }
+
+  .contacts {
+  }
+
+  .page-footer__logo--image {
+    position: static;
+    fill: $ce-gray;
+    width: 128px;
+    height: 24px;
+  }
+}

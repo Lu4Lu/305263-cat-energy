@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+}
+
+.overflow {
+  overflow: visible;
+}
+
+section {
+  display: block;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 0;
+}
+
+.home-hero {
+  position: relative;
+  text-align: center;
+  background-color: $ce-white;
+  padding-top: 35px;
+  background-image: url("../../img/index-background-mobile@1x.png");
+
+  .home-hero__image {
+    display: block;
+    margin: 0 auto 5px;
+  }
+}
+
+.programs {
+  padding-top: 35px;
+}
+
+.features {
+  padding-top: 35px;
+}
+
+.example {
+  background-color: $ce-gray;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}

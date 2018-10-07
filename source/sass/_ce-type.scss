@@ -1,0 +1,62 @@
+// Vito Webfont
+
+// Oswald Regular
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Oswald Medium
+@font-face {
+  font-family: "Oswald Medium";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  letter-spacing: normal;
+  text-rendering: optimizeLegibility;
+}
+
+// Headlines
+h1,
+h2,
+h3,
+b,
+button,
+a {
+  font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  line-height: 1.67;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: $font-size-root;
+}
+
+button,
+a {
+  font-size: $font-size-root;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
