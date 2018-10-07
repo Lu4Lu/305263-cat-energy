@@ -1,0 +1,32 @@
+.example {
+  .example-result {
+    display: inline-block;
+    max-width: 124px;
+    width: 100%;
+    padding: 15px 10px 5px;
+    text-align: center;
+    border: 1px solid $ce-gray-dark;
+    border-radius: 5px;
+  }
+
+  .example-result__wrapper {
+    max-width: 105px;
+    padding: 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    background: #f2f2f2;
+  }
+
+  .example-result__data {
+    font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+    font-size: $font-size-h2;
+  }
+
+  .example-result__legend {
+    font-size: 12px;
+    line-height: 1;
+    margin: 8px 0 0;
+    color: $ce-text-black-lighter;
+  }
+}

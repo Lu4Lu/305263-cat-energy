@@ -31,6 +31,7 @@ b,
 button,
 a {
   font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+  color: $ce-text-black;
 }
 
 h1 {
@@ -49,6 +50,7 @@ h3 {
 p {
   font-family: Arial, sans-serif;
   font-size: $font-size-root;
+  color: $ce-text-black-lighter;
 }
 
 button,
