@@ -1,9 +1,21 @@
 // Links with transforming background plane
 .btn {
-  padding: 17px 18px 15px 18px;
+  padding: 17px 30px 15px 30px;
   background-color: $ce-btn-green;
   color: $ce-white;
 
   &--program {
+  }
+
+  &--example {
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: $button-text;
+    cursor: pointer;
+    color: $ce-text-black;
   }
 }
