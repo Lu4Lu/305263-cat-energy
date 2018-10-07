@@ -2,19 +2,21 @@
   ul {
     list-style: none;
     padding: 0;
-    display: inline-block;
+  }
+
+  .features__item {
+    display: flex;
+    margin: 0 0 20px 0;
   }
 
   .features__item::before {
     content: "";
     display: block;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 20px;
     width: 60px;
     height: 60px;
     background-color: $ce-btn-green;
-    background-size: 50px;
   }
 
   .feature--leaf::before {
@@ -39,5 +41,9 @@
     background-image: url("../img/advantage-clock@1x.png");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .feature__description {
+    padding-right: 5px;
   }
 }
