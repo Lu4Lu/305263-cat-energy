@@ -1,10 +1,28 @@
-// Links with transforming background plane
 .btn {
   padding: 17px 30px 15px 30px;
   background-color: $ce-btn-green;
   color: $ce-white;
+  border-style: none;
+
+  &--home-hero {
+    width: 100%;
+  }
 
   &--program {
+    text-align: left;
+    color: $ce-text-black;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: $font-size-16px;
+    background: transparent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 10px;
+      background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+    }
   }
 
   &--example {
@@ -14,7 +32,7 @@
     background: transparent;
     border: none;
     text-transform: uppercase;
-    font-size: $button-text;
+    font-size: $font-size-16px;
     cursor: pointer;
     color: $ce-text-black;
   }

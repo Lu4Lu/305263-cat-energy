@@ -18,8 +18,7 @@ section {
   position: relative;
   text-align: center;
   background-color: $ce-white;
-  padding-top: 35px;
-  background-image: url("../../img/index-background-mobile@1x.png");
+  margin-bottom: $margin-25;
 
   .home-hero__image {
     display: block;

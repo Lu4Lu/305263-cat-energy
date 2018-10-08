@@ -6,6 +6,28 @@
   }
 
   .contacts {
+    background-color: $ce-white;
+  }
+
+  .contacts__info {
+    padding: $margin-25;
+  }
+
+  .contacts__title,
+  .contacts__address {
+    margin-bottom: 0;
+  }
+
+  .contacts__title {
+    font-size: $font-size-16px;
+    text-transform: uppercase;
+  }
+
+  .contacts__map {
+    iframe {
+      width: 320px;
+      height: 480px;
+    }
   }
 
   .page-footer__logo--image {

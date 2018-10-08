@@ -43,8 +43,8 @@ $margin-720: 720px;
 
 // Typography
 //
-$font-family-sans-serif: "Oswald", Helvetica, Arial, sans-serif !default;
-$font-family-bold: "Oswald Bold";
+$font-family-sans-serif: "Oswald Regular", Helvetica, Arial, sans-serif !default;
+$font-family-medium: "Oswald Medium";
 
 $font-size-root: 14px !default;
 $font-size-root-unitless: 14; // Do the (rem) math with the scale
@@ -52,6 +52,8 @@ $font-size-root-unitless: 14; // Do the (rem) math with the scale
 $font-size-h1: 36px;
 $font-size-h2: 24px;
 $font-size-h3: $font-size-root;
+
+$font-size-b: 18px;
 
 $font-size-16px: 16px;
 
