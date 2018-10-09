@@ -225,46 +225,55 @@
 
     <!-- Показать еще 100500 товаров -->
     <section class="show-more">
-      <h2 class="visually-hidden">Показать еще 100500 товаров</h2>
-      <b class="show-more__title">Показать еще 100500 товаров</b>
-      <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+      <div class="show-more__wrapper">
+        <h2 class="visually-hidden">Показать еще 100500 товаров</h2>
+        <h3 class="show-more__title">Показать еще 100500 товаров</h3>
+        <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
+      </div>
       <button class="btn btn--more">Показать все</button>
     </section>
 
     <!-- дополнительные продукты -->
     <section class="add-products">
-
       <h2 class="add-products__title">Дополнительные товары</h2>
       <!-- пример дополнительного товара -->
       <ul class="add-products__list products">
         <li class="add-products__item product">
-          <b class="product__title">Сахарозаменитель</b>
-          <p class="product__details">1 упаковка (100 г)</p>
-          <p class="product__details">100 Р.</p>
+          <h3 class="product__title">Сахарозаменитель</h3>
+          <div class="product__details">
+            <p class="product__detail">1 упаковка (100 г)</p>
+            <p class="product__detail">100 Р.</p>
+          </div>
         </li>
 
         <li class="add-products__item product">
-          <b class="product__title">Питьевая вода</b>
-          <p class="product__details">5 литров</p>
-          <p class="product__details">50 Р.</p>
+          <h3 class="product__title">Питьевая вода</h3>
+          <div class="product__details">
+            <p class="product__detail">5 литров</p>
+            <p class="product__detail">50 Р.</p>
+          </div>
         </li>
 
         <li class="add-products__item product">
-          <b class="product__title">Молоко</b>
-          <p class="product__details">1 литр</p>
-          <p class="product__details">100 Р.</p>
+          <h3 class="product__title">Молоко</h3>
+          <div class="product__details">
+            <p class="product__detail">1 литр</p>
+            <p class="product__detail">100 Р.</p>
+          </div>
         </li>
 
         <li class="add-products__item product">
-          <b class="product__title">Витамины</b>
-          <p class="product__details">1 упаковка (30 г)</p>
-          <p class="product__details">300 Р.</p>
+          <h3 class="product__title">Витамины</h3>
+          <div class="product__details">
+            <p class="product__detail">1 упаковка (30 г)</p>
+            <p class="product__detail">300 Р.</p>
+          </div>
         </li>
       </ul>
 
       <div class="add-products__banner banner">
-        <img class="banner__image" src="#">
-        <p class="banner__text">Закажите все и получите чехол для кота в подарок!</p>
+        <img class="banner__image" src="../img/icon-gift.svg" alt="Подарок-чехол">
+        <p class="banner__description">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
   </main>
