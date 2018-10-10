@@ -1,0 +1,31 @@
+.banner {
+  height: 290px;
+  padding: $margin-25;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 290px;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-color: $ce-btn-green;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .banner__description {
+    text-align: center;
+    color: $ce-white;
+    font-size: $font-size-16px;
+  }
+
+  .banner__image {
+    width: 55px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: $margin-65;
+  }
+}

@@ -29,7 +29,9 @@ b,
 button,
 a,
 form,
-fieldset {
+fieldset,
+label,
+input {
   font-family: $font-family-sans-serif;
   font-weight: 400;
   color: $ce-text-black;
@@ -82,4 +84,9 @@ ul {
 
 li {
   margin: 0;
+}
+
+label,
+input {
+  font-size: $font-size-16px;
 }

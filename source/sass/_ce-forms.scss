@@ -1,0 +1,46 @@
+.program-selector {
+  text-transform: uppercase;
+
+  .program-selector__title {
+    text-transform: none;
+  }
+
+  .program-selector__description {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  input,
+  label {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    font-size: $font-size-16px;
+  }
+
+  input {
+    padding: $margin-15;
+    color: $ce-text-black-lighter;
+    border: solid 1px $ce-gray-dark;
+  }
+
+  label {
+    margin-right: $margin-10;
+    color: $ce-text-black-lightest;
+  }
+
+  legend {
+    font-family: $font-family-sans-serif;
+    text-transform: none;
+    font-size: $font-size-h2;
+    text-align: left;
+  }
+
+  .selector-form__item {
+    margin-bottom: $margin-15;
+  }
+}

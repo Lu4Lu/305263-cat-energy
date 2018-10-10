@@ -1,0 +1,42 @@
+.catalog {
+  padding-top: $margin-40;
+
+  .catalog__title {
+    margin-bottom: $margin-40;
+  }
+
+  .catalog__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .catalog__item {
+    border-bottom: 1px solid $ce-gray-dark;
+    padding-bottom: $margin-25;
+  }
+
+  .product__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product__description {
+    margin-bottom: $margin-15;
+  }
+
+  .product__details {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .product__title {
+    margin-bottom: $margin-25;
+  }
+
+  .btn--catalog {
+    width: 100%;
+    font-size: $font-size-16px;
+  }
+}
