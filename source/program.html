@@ -57,23 +57,21 @@
             <input id="age" name="age" type="number" placeholder="7" minlength="1" required>
           </p>
         </fieldset>
-
-        <fieldset class="selector-form__element selector-form-programs">
+        <fieldset class="selector-form__element selector-form__programs">
           <p class="selector-form__item">
             <input type="radio" name="programs" value="slim" id="program-slim" class="program-radio" checked>
-            <label class="program program--slim" for="program-slim">Похудение</label>
+            <label class="program program--radio" for="program-slim">Похудение</label>
           </p>
           <p class="selector-form__item">
             <input type="radio" name="programs" value="pro" id="program-pro" class="program-radio">
-            <label class="program program--pro" for="program-pro">Набор массы</label>
+            <label class="program program--radio" for="program-pro">Набор массы</label>
           </p>
           <p class="selector-form__item">
             <input type="radio" name="programs" value="advice" id="program-advice" class="program-radio">
-            <label class="program program--advice" for="program-advice">Не знаю (Нужен ваш совет)</label>
+            <label class="program program--radio" for="program-advice">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
-
-        <fieldset class="selector-form__element selector-form-contacts">
+        <fieldset class="selector-form__element selector-form__contacts">
           <legend class="selector-form__title">Контактные данные (владельца кота)</legend>
 
           <p class="selector-form__item">
@@ -85,39 +83,36 @@
             <input id="phone" name="phone" type="phone" placeholder="8 (960) 900-60-90" size="30" required>
           </p>
         </fieldset>
-
-        <fieldset class="selector-form__element selector-form-comment">
+        <fieldset class="selector-form__element selector-form__comment">
           <legend class="selector-form__title">Комментарий</legend>
           <p class="selector-form__item">
             <textarea id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
-
-        <fieldset class="selector-form__element selector-form-extras">
+        <fieldset class="selector-form__element selector-formextras">
 
           <legend class="selector-form__title">Дополнительно</legend>
 
-          <p class="selector-form__item">
-            <input type="checkbox" name="extra-sweetener" value="sweetener" id="extra-sweetener" class="selector-form__extra-checkbox" checked>
-            <label class="selector-form__extra" for="extra-sweetener">Сахарозаменитель</label>
-          </p>
+          <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-sweetener">
+            <input type="checkbox" name="extra-sweetener" value="sweetener" id="extra-sweetener" class="extra-input" checked>
+            <span>Сахарозаменитель</span>
+          </label>
 
-          <p class="selector-form__item">
-            <input type="checkbox" name="extra-water" value="water" id="extra-water" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-water">Питьевая вода</label>
-          </p>
+          <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-water">
+            <input type="checkbox" name="extra-water" value="water" id="extra-water" class="extra-input">
+            <span>Питьевая вода</span>
+          </label>
 
-          <p class="selector-form__item">
-            <input type="checkbox" name="extra-milk" value="milk" id="extra-milk" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-milk">Молоко</label>
-          </p>
+          <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-milk">
+            <input type="checkbox" name="extra-milk" value="milk" id="extra-milk" class="extra-input">
+            <span>Молоко</span>
+          </label>
 
-          <p class="selector-form__item">
-            <input type="checkbox" name="extra-vitamins" value="vitamins" id="extra-vitamins" class="extra-checkbox">
-            <label class="selector-form__extra" for="extra-vitamins">Витамины</label>
-          </p>
+          <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-vitamins">
+            <input type="checkbox" name="extra-vitamins" value="vitamins" id="extra-vitamins" class="extra-input">
+            <span>Витамины</span>
+          </label>
         </fieldset>
-
         <button class="btn btn--request" type="submit">Отправить заявку</button>
       </form>
     </section>

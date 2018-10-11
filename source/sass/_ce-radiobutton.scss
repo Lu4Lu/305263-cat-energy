@@ -1,0 +1,32 @@
+.program-radio {
+  display: none;
+}
+
+.program--radio {
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    // top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: $ce-btn-green;
+    border-radius: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $ce-white;
+    border: 1px solid $ce-gray-dark;
+    border-radius: 50%;
+  }
+}
+
+input[type="radio"]:checked + label::after {
+  display: block;
+}

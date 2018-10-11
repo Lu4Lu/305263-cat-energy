@@ -1,46 +1,37 @@
-.program-selector {
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input,
+label,
+textarea {
+  font-family: $font-family-sans-serif;
   text-transform: uppercase;
+  font-size: $font-size-16px;
+}
 
-  .program-selector__title {
-    text-transform: none;
-  }
+input {
+  padding: $margin-15;
+  color: $ce-text-black-lighter;
+  border: solid 1px $ce-gray-dark;
+}
 
-  .program-selector__description {
-    font-family: $font-family-sans-serif;
-    text-transform: uppercase;
-  }
+label {
+  margin-right: $margin-10;
+  color: $ce-text-black-lightest;
+  margin-bottom: $margin-15;
+}
 
-  fieldset {
-    border: none;
-    padding: 0;
-  }
+legend {
+  font-family: $font-family-sans-serif;
+  text-transform: none;
+  font-size: $font-size-h2;
+  text-align: left;
+}
 
-  input,
-  label {
-    font-family: $font-family-sans-serif;
-    text-transform: uppercase;
-    font-size: $font-size-16px;
-  }
-
-  input {
-    padding: $margin-15;
-    color: $ce-text-black-lighter;
-    border: solid 1px $ce-gray-dark;
-  }
-
-  label {
-    margin-right: $margin-10;
-    color: $ce-text-black-lightest;
-  }
-
-  legend {
-    font-family: $font-family-sans-serif;
-    text-transform: none;
-    font-size: $font-size-h2;
-    text-align: left;
-  }
-
-  .selector-form__item {
-    margin-bottom: $margin-15;
-  }
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid $ce-gray-dark;
 }

@@ -15,6 +15,10 @@
   .add-products__item {
     margin-bottom: $margin-15;
     border-bottom: 1px solid $ce-gray-dark;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   .product__title {

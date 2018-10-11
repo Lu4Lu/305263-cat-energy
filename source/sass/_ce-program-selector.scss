@@ -1,13 +1,24 @@
 .program-selector {
   padding-top: $margin-30;
+  text-transform: uppercase;
 
   .program-selector__title {
+    text-transform: none;
     margin-bottom: $margin-30;
   }
 
   .program-selector__description {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
     margin-bottom: $margin-40;
     padding-right: $margin-30;
+  }
+
+  .program-selector__legend {
+    font-size: $font-size-root;
+    text-transform: none;
+    text-align: center;
+    margin: auto;
   }
 
   .selector-form__element {
@@ -18,9 +29,14 @@
     &:first-child {
       padding-top: 0;
     }
+  }
 
-    &:last-child {
-    }
+  .selector-form__extras {
+    border-bottom: none;
+  }
+
+  .selector-form__item {
+    margin-bottom: $margin-15;
   }
 
   .selector-form__title {
@@ -29,13 +45,7 @@
     line-height: 1;
   }
 
-  .selector-form__extra {
-  }
-
-  .program-selector__legend {
-    font-size: $font-size-root;
-    text-transform: none;
-    text-align: center;
-    margin: auto;
+  .program {
+    padding-left: $margin-40;
   }
 }
