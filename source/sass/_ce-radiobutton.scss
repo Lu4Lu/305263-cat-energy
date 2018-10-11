@@ -1,32 +1,26 @@
-.program-radio {
+.program-input {
   display: none;
 }
 
-.program--radio {
-  &::after {
-    content: "";
-    display: none;
-    position: absolute;
-    left: 0;
-    // top: 50%;
-    width: 12px;
-    height: 12px;
-    background-color: $ce-btn-green;
-    border-radius: 100%;
-  }
+.program-radio {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  line-height: $checkbox-size;
+  cursor: pointer;
 
-  &::before {
+  &--large span::before {
     content: "";
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-color: $ce-white;
-    border: 1px solid $ce-gray-dark;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $margin-15;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    border: solid 1px $ce-gray-dark;
     border-radius: 50%;
   }
-}
 
-input[type="radio"]:checked + label::after {
-  display: block;
+  & input:checked + span::before {
+    background-image: url("img/icon-circle.svg");
+  }
 }
