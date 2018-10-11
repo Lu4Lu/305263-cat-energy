@@ -35,3 +35,54 @@ textarea {
   min-height: 150px;
   border: 1px solid $ce-gray-dark;
 }
+
+.extra-input {
+  display: none;
+}
+
+.extra-checkbox {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  line-height: $checkbox-size;
+
+  &--large span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $margin-15;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    outline: solid 1px $ce-gray-dark;
+  }
+  & input:checked + span::before {
+    background-image: url("img/icon-tick.svg");
+  }
+}
+
+.program-input {
+  display: none;
+}
+
+.program-radio {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  line-height: $checkbox-size;
+  cursor: pointer;
+
+  &--large span::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $margin-15;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    border: solid 1px $ce-gray-dark;
+    border-radius: 50%;
+  }
+
+  & input:checked + span::before {
+    background-image: url("img/icon-circle.svg");
+  }
+}
