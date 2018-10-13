@@ -1,0 +1,51 @@
+.program-selector {
+  padding-top: $margin-30;
+  text-transform: uppercase;
+
+  .program-selector__title {
+    text-transform: none;
+    margin-bottom: $margin-30;
+  }
+
+  .program-selector__description {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    margin-bottom: $margin-40;
+    padding-right: $margin-30;
+  }
+
+  .program-selector__legend {
+    font-size: $font-size-root;
+    text-transform: none;
+    text-align: center;
+    margin: auto;
+  }
+
+  .selector-form__element {
+    border-bottom: 1px solid $ce-gray-dark;
+    padding-bottom: $margin-10;
+    padding-top: $margin-25;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .selector-form__extras {
+    border-bottom: none;
+  }
+
+  .selector-form__item {
+    margin-bottom: $margin-15;
+  }
+
+  .selector-form__title {
+    padding-top: $margin-25;
+    padding-right: $margin-65;
+    line-height: 1;
+  }
+
+  .program {
+    padding-left: $margin-40;
+  }
+}

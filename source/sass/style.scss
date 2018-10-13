@@ -1,15 +1,17 @@
+@import "_normalize.scss";
+
 // variables
 @import "_ce-variables.scss";
 
 // Custom styling
 @import "_ce-utilities.scss";
 @import "_ce-type.scss";
+@import "_ce-button.scss";
 @import "blocks/_ce-forms.scss";
 @import "blocks/_ce-footer.scss";
 @import "blocks/_ce-navigation.scss";
 @import "blocks/_ce-section.scss";
 @import "blocks/_ce-hero.scss";
-@import "_ce-button.scss";
 @import "blocks/_ce-programs.scss";
 @import "blocks/_ce-example.scss";
 @import "blocks/_ce-features.scss";

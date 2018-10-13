@@ -44,7 +44,7 @@ $margin-720: 720px;
 
 // Typography
 //
-$font-family-sans-serif: "Oswald Regular", helvetica, arial, sans-serif !default;
+$font-family-sans-serif: "Oswald", helvetica, arial, sans-serif !default;
 $font-family-medium: "Oswald Medium";
 $font-family-text: arial, sans-serif;
 
@@ -70,3 +70,9 @@ $input-padding: 15px;
 
 $input-border-color: $ce-gray-dark;
 $input-btn-border-width: 1px !default; // For form controls and buttons
+
+// Breakpoints
+//
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
