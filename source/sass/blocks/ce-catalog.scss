@@ -2,6 +2,7 @@
   padding-top: $margin-40;
 
   .catalog__title {
+    font-weight: 400;
     margin-bottom: $margin-40;
   }
 
@@ -24,13 +25,13 @@
     padding: 0;
     text-align: left;
     font-size: 12px;
+    color: $ce-text-black-lighter;
+    line-height: 1.33;
   }
 
   .product__title {
     margin-bottom: $margin-25;
-  }
-
-  .btn--catalog {
-    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }

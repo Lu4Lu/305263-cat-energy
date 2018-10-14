@@ -7,6 +7,8 @@
   .show-more__title {
     font-size: $font-size-16px;
     margin-bottom: $margin-10;
+    text-transform: uppercase;
+    font-weight: 400;
 
     &::before {
       content: "";
@@ -26,11 +28,5 @@
     font-size: $font-size-12px;
     padding-bottom: $margin-15;
     margin: 0;
-  }
-
-  .btn--more {
-    background-color: $ce-gray;
-    width: 100%;
-    color: $ce-text-black;
   }
 }

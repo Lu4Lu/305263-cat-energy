@@ -1,5 +1,6 @@
 .example {
-  .example__results {
+  .example__title {
+    font-weight: 400;
   }
 
   .results__wrapper {
@@ -13,7 +14,6 @@
     text-align: center;
     border: 1px solid $ce-gray-dark;
     border-radius: 5px;
-    text-align: center;
     margin-bottom: $margin-10;
   }
 
@@ -27,7 +27,8 @@
   }
 
   .example-result__data {
-    font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
     font-size: $font-size-h2;
   }
 
@@ -40,16 +41,15 @@
   }
 
   .example-result__cost {
-    font-family: "Oswald Regular", Helvetica, Arial, sans-serif;
+    font-family: $font-family-sans-serif;
     font-size: $font-size-root;
     text-align: center;
+    text-transform: uppercase;
+    color: $ce-text-black;
   }
 
   .example_image {
     margin: $margin-25 auto;
-  }
-
-  .slider {
   }
 
   .slider-outline {

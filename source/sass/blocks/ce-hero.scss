@@ -6,6 +6,7 @@
   p {
     font-family: $font-family-sans-serif;
     color: $ce-white;
+    font-weight: 400;
   }
 
   b {
@@ -27,10 +28,12 @@
   }
 
   .home-hero__image {
-    margin: $margin-25 auto $margin-10;
+    margin: $margin-25 auto $margin-5;
   }
 
   .home-hero__title {
-    margin-top: $margin-25;
+    margin-top: $margin-30;
+    margin-bottom: $margin-20;
+    line-height: 1;
   }
 }
