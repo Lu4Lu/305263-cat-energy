@@ -1,0 +1,22 @@
+@import "_normalize.scss";
+
+// variables
+@import "_ce-variables.scss";
+
+// Custom styling
+@import "_ce-utilities.scss";
+@import "_ce-type.scss";
+@import "_ce-button.scss";
+@import "blocks/ce-forms";
+@import "blocks/ce-footer";
+@import "blocks/ce-navigation";
+@import "blocks/ce-section";
+@import "blocks/ce-hero";
+@import "blocks/ce-programs";
+@import "blocks/ce-example";
+@import "blocks/ce-features";
+@import "blocks/ce-catalog";
+@import "blocks/ce-show-more";
+@import "blocks/ce-add-products.scss";
+@import "blocks/ce-banner";
+@import "blocks/ce-program-selector";
