@@ -19,22 +19,6 @@
     font-size: $font-size-root;
   }
 
-  &--program {
-    text-align: left;
-    color: $ce-text-black;
-    padding-left: 0;
-    font-size: $font-size-16px;
-    background: transparent;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 10px;
-      background: url("../img/icon-right-arrow-long.svg") no-repeat center;
-    }
-  }
-
   &--catalog {
     width: 100%;
   }
