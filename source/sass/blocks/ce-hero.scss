@@ -1,16 +1,34 @@
 .home-hero {
-  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  background-color: $ce-white;
+  margin-bottom: $margin-20;
+  color: $ce-white;
 
-  h1,
-  b,
-  p {
-    font-family: $font-family-sans-serif;
-    color: $ce-white;
-    font-weight: 400;
+  .home-hero__image {
+    display: block;
+    margin: auto;
   }
 
-  b {
+  .container {
+    padding-top: $margin-25;
+  }
+
+  .home-hero__title,
+  .home-hero__motto {
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+  }
+
+  .home-hero__title {
+    margin-bottom: $margin-20;
+    line-height: 1;
+  }
+
+  .home-hero__motto {
     text-transform: uppercase;
+    margin-bottom: $margin-30;
   }
 
   &::before {
@@ -26,14 +44,53 @@
     background-size: cover;
     z-index: -1;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .home-hero {
+    color: $ce-text-black;
+    margin-bottom: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+  }
 
   .home-hero__image {
-    margin: $margin-25 auto $margin-5;
+    display: block;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // margin: auto;
+    z-index: -1;
+  }
+
+  .home-hero::before {
+    content: "";
+    display: none;
+  }
+
+  .home-hero__title,
+  .home-hero__motto {
+    text-align: left;
+    padding-left: $margin-100;
+    max-width: 540px;
   }
 
   .home-hero__title {
-    margin-top: $margin-30;
-    margin-bottom: $margin-20;
-    line-height: 1;
+    font-size: $tablet-h1;
+  }
+  .home-hero__motto {
+    font-size: $font-size-20px;
+    margin-bottom: $margin-40;
+  }
+
+  .btn--home-hero {
+    margin-left: $margin-100;
+    max-width: 300px;
+    font-size: $font-size-20px;
   }
 }
