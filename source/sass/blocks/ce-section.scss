@@ -1,19 +1,8 @@
 section {
   display: block;
   position: relative;
-  z-index: 2;
   overflow: hidden;
-  padding: 0 20px 0 20px;
-}
-
-.features {
-  padding-top: 35px;
-}
-
-.example {
-  background-color: $ce-gray;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  z-index: 2;
 }
 
 .catalog {

@@ -1,3 +1,22 @@
+.page-header {
+  // background-color: $ce-white;
+
+  .container {
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    min-height: 306px;
+    width: 100%;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: #63a73a;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
 .site-list {
   display: block;
   margin: 0;
@@ -29,9 +48,17 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // background-color: $ce-white;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .main-nav__toggle {
@@ -63,7 +90,40 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: $margin-55;
+      margin-left: $margin-110;
+      margin-right: $margin-110;
+    }
+
+    &::after {
+      display: block;
+      top: -55px;
+      right: 0;
+      left: inherit;
+      min-height: 695px;
+      min-width: 720px;
+      width: 50%;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-color: $ce-btn-green;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
   .main-nav {
-    max-width: 40%;
+    max-width: 45%;
+  }
+
+  .site-list__link {
+    color: $ce-white;
   }
 }
