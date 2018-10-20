@@ -3,6 +3,9 @@
 // variables
 @import "_ce-variables.scss";
 
+// mixins
+@import "mixins/container.scss";
+
 // Custom styling
 @import "_ce-utilities.scss";
 @import "_ce-type.scss";

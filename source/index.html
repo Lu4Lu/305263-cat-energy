@@ -35,7 +35,7 @@
   <main class="page-main overflow">
 
     <section class="section home-hero">
-      <div class="container">
+      <div class="container container__hero">
         <h1 class="home-hero__title">Функциональное питание для котов</h1>
         <b class="home-hero__motto">Занялся собой? Займись котом!</b>
         <picture>
@@ -52,7 +52,7 @@
 
     <section class="programs">
       <h2 class="visually-hidden">Программы</h2>
-      <!-- <div class="container"> -->
+      <div class="container container__programs">
         <article class="programs__item program program--slim">
           <div class="program__wrapper">
             <div class="program__image">
@@ -78,7 +78,7 @@
             <a class="btn btn--program">Каталог Pro</a>
           </div>
         </article>
-      <!-- </div> -->
+      </div>
     </section>
 
     <section class="features">
@@ -152,7 +152,6 @@
 
     <!-- контакты -->
     <section class="contacts">
-      <div class="container">
         <div class="contacts__info">
           <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8<br/><span>&nbsp;</span>Санкт-Петербург</p>
@@ -161,7 +160,6 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003015!2d30.320858715981462!3d59.93871916905433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538417385994"
           frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-      </div>
     </section>
   </main>
 
@@ -169,7 +167,7 @@
   <footer class="footer">
     <div class="container">
       <!-- адрес  -->
-      <div class="footer__contacts contacts">
+      <div class="footer__details">
         <div class="footer__logo">
           <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
         </div>
@@ -186,7 +184,15 @@
             </li>
           </ul>
         </div>
-        <div class="footer__copyright copyright">
+        <div class="footer__developer developer">
+
+          <a class="developer-nk" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="developer__name">HTML Academy</span>
+            <svg class="developer__icon" width="40" height="40">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+
           <b class="copyright__name">HTML Academy</b>
           <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
