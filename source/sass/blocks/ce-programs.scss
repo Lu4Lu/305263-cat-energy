@@ -50,11 +50,10 @@
 @media (min-width: $tablet-width) {
   .container__programs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .program {
-    width: 50%;
     background-color: $ce-gray;
     margin-bottom: $margin-20;
     padding: $margin-80 $margin-315 $margin-55 $margin-55;
@@ -90,6 +89,7 @@
 
 @media (min-width: $desktop-width) {
   .container__programs {
+    flex-direction: row;
     margin-bottom: $margin-80;
   }
 
