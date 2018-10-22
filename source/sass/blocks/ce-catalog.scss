@@ -5,27 +5,15 @@
   margin-left: 0;
   margin-right: 0;
   padding-top: $margin-30;
-}
-
-.product__wrapper {
-  padding-left: $margin-20;
-  padding-right: $margin-20;
+  margin-bottom: $margin-30;
 }
 
 .catalog__title {
   font-weight: 400;
   margin-top: 0;
   padding-bottom: $margin-35;
-  border-bottom: 1px solid $ce-gray-lighter;
-}
-
-.catalog__list {
-  padding: 0;
-  list-style: none;
-}
-
-.catalog__item {
-  padding-bottom: $margin-25;
+  padding-left: $margin-30;
+  padding-right: $margin-30;
   border-bottom: 1px solid $ce-gray-lighter;
 }
 
@@ -35,6 +23,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: $margin-20;
+  padding-right: $margin-20;
+}
+
+.catalog__list {
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $ce-gray-lighter;
+}
+
+.catalog__item {
+  padding-bottom: $margin-25;
+  border-bottom: 1px solid $ce-gray-lighter;
 }
 
 .product__image,
@@ -78,7 +79,17 @@
 
 @media (min-width: $tablet-width) {
   .container__catalog {
-    padding-top: $margin-40;
+    padding-top: 0;
+    margin-bottom: $margin-70;
+  }
+
+  .catalog__title {
+    border-bottom: none;
+    padding-left: $margin-30;
+    padding-right: $margin-30;
+    padding-bottom: 0;
+    font-size: $tablet-h1;
+    margin-bottom: $margin-30;
   }
 
   .catalog__list {
@@ -86,12 +97,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
   }
 
   .catalog__item {
     width: 50%;
-    margin-top: $margin-140;
-    margin-bottom: $margin-70;
+    margin-top: $margin-155;
+    // margin-bottom: $margin-70;
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -102,17 +114,18 @@
     padding: $margin-40;
     margin-left: $margin-30;
     margin-right: $margin-30;
-
-    picture {
-      width: 100%;
-    }
   }
 
   .product__image {
-    align-self: baseline;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+    align-items: center;
     margin: auto;
     min-height: 215px;
-    margin-top: -$margin-140;
+    margin-top: -$margin-155;
+    text-align: center;
+    margin-bottom: $margin-50;
   }
 
   .product__title {
@@ -120,7 +133,7 @@
     width: 130px;
     text-align: center;
     font-size: $font-size-20px;
-    margin-bottom: $margin-30;
+    margin-bottom: 0;
   }
 
   .product__details {
@@ -147,7 +160,17 @@
       }
     }
   }
+}
 
-  .product__details {
+@media (min-width: $desktop-width) {
+  .container__catalog {
+    margin-left: $margin-90;
+    margin-right: $margin-90;
+  }
+
+  .catalog__item {
+    width: 25%;
+    margin-top: $margin-140;
+    margin-bottom: 0;
   }
 }

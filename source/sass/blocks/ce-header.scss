@@ -102,7 +102,7 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-top: $margin-25;
-    margin-bottom: $margin-25;
+    margin-bottom: $margin-65;
   }
 
   .toggle-menu {
@@ -142,22 +142,27 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
+  }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: $margin-55;
-      margin-left: $margin-110;
-      margin-right: $margin-110;
-    }
+  .container__page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: $margin-55;
+    margin-left: $margin-110;
+    margin-right: $margin-110;
+    margin-bottom: $margin-85;
   }
 
   .main-nav {
     max-width: 45%;
   }
 
-  .site-list__link {
+  .main-nav--white {
     color: $ce-white;
   }
+
+  // .site-list__link {
+  //   color: $ce-white;
+  // }
 }

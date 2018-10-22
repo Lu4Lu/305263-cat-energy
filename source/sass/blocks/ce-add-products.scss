@@ -1,39 +1,77 @@
 .add-products {
+}
+
+.container__add-products {
+}
+
+.add-products__title {
+  display: inline-block;
+  font-weight: normal;
+  margin-top: 0;
+  margin-left: -$margin-20;
+  margin-bottom: 0;
+  padding-bottom: $margin-30;
+  padding-left: $margin-20;
+  padding-right: $margin-25;
+  background-color: $ce-white;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    margin-top: 2px;
+    background: $ce-btn-green;
+    z-index: -1;
+  }
+}
+
+.add-products__description {
+  margin-bottom: $margin-35;
+}
+
+.add-products__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: $margin-40;
+  padding-top: $margin-15;
+  border-top: 1px solid $ce-gray-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .container__add-products {
+  }
+
   .add-products__title {
-    margin-top: $margin-30;
-    padding-bottom: $margin-30;
-    border-bottom: 1px solid $ce-gray-dark;
-    margin-bottom: $margin-15;
-    font-weight: normal;
+    font-size: $font-size-36px;
+    margin-left: 0;
+    padding-left: $margin-30;
+    padding-right: $margin-30;
+    padding-bottom: $margin-75;
+
+    &:before {
+      top: 25px;
+    }
   }
 
   .add-products__list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: $margin-40;
+    padding-top: 0;
   }
+}
 
-  .add-products__item {
-    margin-bottom: $margin-15;
-    border-bottom: 1px solid $ce-gray-dark;
-    padding-bottom: $margin-15;
-  }
-
-  .add-product__title {
-    text-transform: uppercase;
-    font-size: $font-size-16px;
-    margin-bottom: $margin-15;
-    margin-top: 0;
-    font-weight: normal;
-  }
-
-  .add-product__details {
+@media (min-width: $desktop-width) {
+  .add-products__description {
     display: flex;
-    color: $ce-text-black-lighter;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: $margin-85;
+  }
 
-    &:last-child {
-      align-self: flex-end;
-      text-align: right;
-    }
+  .add-products__list {
+    width: 70%;
+    margin-bottom: 0;
   }
 }
