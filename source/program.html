@@ -43,7 +43,7 @@
         <p class="program-selector__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <!-- форма -->
         <form class="program-selector__form selector-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-          <!-- <div class="selector-form__row"> -->
+          <div class="selector-form__row">
             <fieldset class="selector-form__element selector-form__personal">
               <p class="selector-form__item">
                 <label class="selector-form__label" for="name">Имя:<sup>*</sup></label>
@@ -61,26 +61,26 @@
               </p>
             </fieldset>
             <fieldset class="selector-form__element selector-form__programs">
-            <p class="selector-form__item">
-              <label class="program-radio program-radio--large" for="program-slim">
-                <input type="radio" name="programs" value="slim" id="program-slim" class="program-input" checked>
-                <span>Похудение</span>
-              </label>
-            </p>
-            <p class="selector-form__item">
-              <label class="program-radio program-radio--large" for="program-pro">
-                <input type="radio" name="programs" value="pro" id="program-pro" class="program-input">
-                <span>Набор массы</span>
-              </label>
-            </p>
-            <p class="selector-form__item">
-              <label class="program-radio program-radio--large" for="program-advice">
-                <input type="radio" name="programs" value="advice" id="program-advice" class="program-input">
-                <span>Не знаю (Нужен ваш совет)</span>
-              </label>
-            </p>
-          </fieldset>
-          <!-- </div> -->
+              <p class="selector-form__item">
+                <label class="program-radio program-radio--large" for="program-slim">
+                  <input type="radio" name="programs" value="slim" id="program-slim" class="program-input" checked>
+                  <span>Похудение</span>
+                </label>
+              </p>
+              <p class="selector-form__item">
+                <label class="program-radio program-radio--large" for="program-pro">
+                  <input type="radio" name="programs" value="pro" id="program-pro" class="program-input">
+                  <span>Набор массы</span>
+                </label>
+              </p>
+              <p class="selector-form__item">
+                <label class="program-radio program-radio--large" for="program-advice">
+                  <input type="radio" name="programs" value="advice" id="program-advice" class="program-input">
+                  <span>Не знаю (Нужен ваш совет)</span>
+                </label>
+              </p>
+        </fieldset>
+          </div>
           <fieldset class="selector-form__element selector-form__contacts">
             <legend class="selector-form__title">Контактные данные (владельца кота)</legend>
 
@@ -130,6 +130,18 @@
         <button class="btn btn--request" type="submit">Отправить заявку</button>
         <small class="program-selector__legend program-selector__legend--top"><sup>*</sup> — Обязательные поля</small>
       </div>
+    </section>
+
+    <!-- контакты -->
+    <section class="contacts">
+        <div class="contacts__info">
+          <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8<br/><span>&nbsp;</span>Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003015!2d30.320858715981462!3d59.93871916905433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1538417385994"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </section>
   </main>
 

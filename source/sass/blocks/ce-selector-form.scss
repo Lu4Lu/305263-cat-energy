@@ -167,10 +167,32 @@
 
 @media (min-width: $desktop-width) {
   .selector-form {
+  }
+
+  .selector-form__row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-between;
+    // align-items: flex-start;
+    align-items: flex-start;
+    margin-bottom: $margin-70;
+
+    .selector-form__element {
+      margin-bottom: 0;
+    }
+
+    .selector-form__personal {
+      width: 50%;
+      padding-bottom: 0;
+    }
+
+    .selector-form__programs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   .selector-form__element {
@@ -179,62 +201,15 @@
     margin-right: 0;
   }
 
-  .selector-form__personal {
-    // width: calc(50% - $margin-40);
-    width: 50%;
-    margin-bottom: $margin-70;
-    margin-right: 0;
-  }
-
-  .selector-form__programs {
-    // width: calc(50% - $margin-40);
-    width: 40%;
-    margin-bottom: $margin-70;
-    margin-left: 9;
-  }
-
-  // .selector-form__title {
-  //   font-size: $font-size-36px;
-  //   padding-left: $margin-40;
-  //   padding-right: $margin-40;
-  //   margin-left: -$margin-40;
-  //   margin-bottom: $margin-70;
-  //
-  //   max-width: 100%;
-  //   background-color: $ce-btn-green;
-  //
-  //   // &::before {
-  //   //   content: "";
-  //   //   position: relative;
-  //   //   top: 50%;
-  //   //   right: 0;
-  //   //   width: 100vw;
-  //   //   height: 3px;
-  //   //   margin-top: 2px;
-  //   //   background: $ce-btn-green;
-  //   //   z-index: 1;
-  //   // }
-  // }
   .selector-form__contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
     justify-content: space-between;
 
-    .selector-form__title {
-      // width: 100%;
-    }
-
-    .selector-form__item {
-      // width: calc(50% - $margin-40);
-      width: 40%;
-
-      &:first-child {
-        margin-right: $margin-40;
-      }
-      &:last-child {
-        margin-left: $margin-40;
-      }
+    .selector-form__item:last-child {
+      padding-left: $margin-80;
     }
   }
 
