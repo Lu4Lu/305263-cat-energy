@@ -89,3 +89,18 @@ textarea {
     background-image: url("img/icon-circle.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .program-radio--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+    vertical-align: bottom;
+  }
+
+  .extra-checkbox--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+  }
+}

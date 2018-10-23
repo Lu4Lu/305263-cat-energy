@@ -41,26 +41,26 @@
       <div class="container container__program-selector">
         <h1 class="program-selector__title">Подбор программы</h1>
         <p class="program-selector__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <small class="program-selector__legend program-selector__legend--top"><sup>*</sup> — Обязательные поля</small>
         <!-- форма -->
-        <form class="selector-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
-          <fieldset class="selector-form__element selector-form__personal">
-            <p class="selector-form__item">
-              <label class="selector-form__label" for="name">Имя:<sup>*</sup></label>
-              <input id="name" name="name" type="text" placeholder="Барсик" minlength="1" maxlength="30" required>
-            </p>
+        <form class="program-selector__form selector-form" method="post" enctype="multipart/form-data" autocomplete="off" action="https://echo.htmlacademy.ru">
+          <!-- <div class="selector-form__row"> -->
+            <fieldset class="selector-form__element selector-form__personal">
+              <p class="selector-form__item">
+                <label class="selector-form__label" for="name">Имя:<sup>*</sup></label>
+                <input id="name" name="name" type="text" placeholder="Барсик" minlength="1" maxlength="30" required>
+              </p>
 
-            <p class="selector-form__item">
-              <label class="selector-form__label" for="weight">Вес (кг):<sup>*</sup></label>
-              <input id="weight" name="weight" type="number" placeholder="7" minlength="1" required>
-            </p>
+              <p class="selector-form__item">
+                <label class="selector-form__label" for="weight">Вес (кг):<sup>*</sup></label>
+                <input id="weight" name="weight" type="number" placeholder="7" minlength="1" required>
+              </p>
 
-            <p class="selector-form__item">
-              <label class="selector-form__label" for="age">Возраст (лет):</label>
-              <input id="age" name="age" type="number" placeholder="7" minlength="1" required>
-            </p>
-          </fieldset>
-          <fieldset class="selector-form__element selector-form__programs">
+              <p class="selector-form__item">
+                <label class="selector-form__label" for="age">Возраст (лет):</label>
+                <input id="age" name="age" type="number" placeholder="7" minlength="1" required>
+              </p>
+            </fieldset>
+            <fieldset class="selector-form__element selector-form__programs">
             <p class="selector-form__item">
               <label class="program-radio program-radio--large" for="program-slim">
                 <input type="radio" name="programs" value="slim" id="program-slim" class="program-input" checked>
@@ -80,6 +80,7 @@
               </label>
             </p>
           </fieldset>
+          <!-- </div> -->
           <fieldset class="selector-form__element selector-form__contacts">
             <legend class="selector-form__title">Контактные данные (владельца кота)</legend>
 
@@ -106,7 +107,6 @@
                 <span>Сахарозаменитель</span>
               </label>
             </p>
-
             <p class="selector-form__item">
               <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-water">
                 <input type="checkbox" name="extra-water" value="water" id="extra-water" class="extra-input">
@@ -119,7 +119,6 @@
                 <span>Молоко</span>
               </label>
             </p>
-
             <p class="selector-form__item">
               <label class="selector-form__extra extra-checkbox extra-checkbox--large" for="extra-vitamins">
                 <input type="checkbox" name="extra-vitamins" value="vitamins" id="extra-vitamins" class="extra-input">
@@ -127,8 +126,9 @@
               </label>
             </p>
           </fieldset>
-          <button class="btn btn--request" type="submit">Отправить заявку</button>
         </form>
+        <button class="btn btn--request" type="submit">Отправить заявку</button>
+        <small class="program-selector__legend program-selector__legend--top"><sup>*</sup> — Обязательные поля</small>
       </div>
     </section>
   </main>
