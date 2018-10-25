@@ -2,21 +2,26 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  margin: auto;
 }
 
 .btn {
-  &--example {
-    width: 25%;
+  &--slider {
+    font-size: $font-size-20px;
+    text-transform: uppercase;
     padding: $margin-15 0 $margin-15 $margin-10;
+    background: none;
+    color: $ce-text-black;
   }
 
-  &--example-before {
+  &--slider-before {
     padding: $margin-15 $margin-20 $margin-15 $margin-20;
     text-align: right;
   }
 
-  &--example-after {
+  &--slider-after {
     padding: $margin-15 $margin-20 $margin-15 $margin-20;
     text-align: left;
   }
@@ -24,18 +29,17 @@
 
 .slider-outline {
   position: relative;
-  width: 50%;
-  max-width: 75px;
+  min-width: 85px;
   height: 6px;
   border: 1px solid $ce-gray-dark;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 4px;
   background-color: $ce-white;
   margin-top: $margin-15;
   margin-bottom: $margin-15;
 }
 
-.slider-fill {
+.slider__toggle {
   width: 35px;
   height: 6px;
   border-radius: 3px;
@@ -48,39 +52,50 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    // margin-bottom: $margin-65;
   }
 
   .btn {
-    &--example {
-      width: 25%;
+    &--slider {
+      width: 20%;
       padding: $margin-15 0 $margin-15 $margin-10;
     }
 
-    &--example-before {
-      padding: $margin-15 $margin-20 $margin-15 $margin-20;
+    &--slider-before {
+      padding: $margin-15 $margin-25 $margin-15 $margin-20;
       text-align: right;
     }
 
-    &--example-after {
-      padding: $margin-15 $margin-20 $margin-15 $margin-20;
+    &--slider-after {
+      padding: $margin-15 $margin-20 $margin-15 $margin-25;
       text-align: left;
     }
   }
 
   .slider-outline {
     position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background-color: $ce-gray-dark;
+    padding: 0;
 
-    width: 35px;
-    height: 35px;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-    border: solid 1px $ce-gray-dark;
-    background-color: $ce-white;
-    border-radius: 50%;
-    margin-top: $margin-15;
-    margin-bottom: $margin-15;
+    &::before {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px $ce-gray-dark;
+      background-color: $ce-white;
+    }
   }
 
-  .slider__toggle:after {
+  .slider__toggle {
     content: "";
     display: block;
     position: absolute;
@@ -93,12 +108,6 @@
     margin: auto;
     border-radius: 50%;
     background-color: $ce-btn-green;
-  }
-
-  .slider-fill {
-    width: 100%;
-    height: 6px;
-    border-radius: 3px;
-    background-color: $ce-gray-dark;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   }
 }
