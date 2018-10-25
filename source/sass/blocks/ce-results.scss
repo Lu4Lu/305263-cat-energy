@@ -105,18 +105,13 @@
     font-size: $font-size-root;
     margin-top: $margin-15;
     background: $ce-white;
+    line-height: 1;
+    padding: 0;
+    color: $ce-text-black-lighter;
   }
 
   .example-result__data {
     font-size: $font-size-30px;
-  }
-
-  .example-result__legend {
-    font-size: $font-size-root;
-    line-height: 1;
-    padding: 0;
-    margin-top: $margin-15;
-    color: $ce-text-black-lighter;
   }
 
   .example-result__cost {
@@ -128,6 +123,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .results {
+    margin-bottom: 0;
+  }
+
   .results__wrapper {
     margin-bottom: $margin-65;
     max-width: 380px;
@@ -169,6 +168,7 @@
   .example-result__cost {
     max-width: 350px;
     text-align: left;
+    padding-bottom: $margin-15;
 
     span {
       padding-left: $margin-65;
