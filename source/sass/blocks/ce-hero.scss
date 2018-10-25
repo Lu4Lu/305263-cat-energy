@@ -100,7 +100,7 @@
 
 @media (min-width: $desktop-width) {
   .home-hero {
-    margin-top: -155px;
+    margin-top: -200px;
     min-height: 695px;
     z-index: -2;
 
@@ -137,12 +137,12 @@
   .home-hero__image {
     position: absolute;
     display: block;
-    margin: auto;
-    margin-top: 0;
+    margin: 0 auto;
 
     top: 145px;
     bottom: 0px;
-    right: 330px;
+    padding-left: $margin-80;
+    left: 50%;
     z-index: -1;
   }
 
