@@ -1,5 +1,5 @@
 .btn {
-  padding: 17px 30px 15px 30px;
+  padding: 15px 30px 16px 30px;
   background-color: $ce-btn-green;
   color: $ce-white;
   font-size: $button-text;
@@ -17,22 +17,6 @@
   &--home-hero {
     width: 100%;
     font-size: $font-size-root;
-  }
-
-  &--program {
-    text-align: left;
-    color: $ce-text-black;
-    padding-left: 0;
-    font-size: $font-size-16px;
-    background: transparent;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 25px;
-      height: 10px;
-      background: url("../img/icon-right-arrow-long.svg") no-repeat center;
-    }
   }
 
   &--catalog {

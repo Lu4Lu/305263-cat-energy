@@ -18,7 +18,6 @@ input {
 
 label {
   margin-right: $margin-10;
-  margin-bottom: $margin-15;
   color: $ce-text-black-lightest;
 }
 
@@ -88,5 +87,25 @@ textarea {
 
   & input:checked + span::before {
     background-image: url("img/icon-circle.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-radio--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+    vertical-align: bottom;
+  }
+
+  .extra-checkbox--large span::before {
+    margin-right: $margin-20;
+    height: 40px;
+    width: 40px;
+  }
+
+  input,
+  textarea {
+    padding: $margin-20;
   }
 }
