@@ -1,8 +1,6 @@
 .contacts {
   background-color: $ce-gray;
   padding: 0;
-  .container {
-  }
 }
 
 .contacts__info {
@@ -34,6 +32,8 @@
 
 .contacts__map {
   border: 0;
+  background-color: $ce-gray-lighter;
+
   iframe {
     width: 100%;
     height: 400px;

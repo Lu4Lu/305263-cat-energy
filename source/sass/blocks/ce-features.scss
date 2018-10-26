@@ -3,10 +3,12 @@ body {
 }
 
 .features {
-  .container {
-    margin-left: $margin-20;
-    margin-right: $margin-20;
-  }
+  background-color: $ce-white;
+}
+
+.container__features {
+  margin-left: $margin-20;
+  margin-right: $margin-20;
 }
 
 .features__list {
@@ -65,11 +67,12 @@ body {
 @media (min-width: $tablet-width) {
   .features {
     border-bottom: 1px solid $ce-gray;
-    .container {
-      margin-left: $margin-30;
-      margin-right: $margin-30;
-      padding-bottom: $margin-55;
-    }
+  }
+
+  .container__features {
+    margin-left: $margin-30;
+    margin-right: $margin-30;
+    padding-bottom: $margin-55;
   }
 
   .features__title {
@@ -135,12 +138,13 @@ body {
 @media (min-width: $desktop-width) {
   .features {
     border-bottom: none;
-    .container {
-      margin-left: $margin-110;
-      margin-right: $margin-110;
-      padding-bottom: $margin-10;
-      margin-bottom: $margin-55;
-    }
+  }
+
+  .container__features {
+    margin-left: $margin-110;
+    margin-right: $margin-110;
+    padding-bottom: $margin-10;
+    margin-bottom: 0;
   }
 
   .feature {

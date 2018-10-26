@@ -30,7 +30,7 @@
 
   .before-after__img {
     position: absolute;
-    top: 0%;
+    top: 0;
     margin: 0 auto;
   }
 
@@ -51,9 +51,6 @@
   }
 
   .before-after__container {
-    // position: absolute;
-    // bottom: 0;
-    // right: 0;
     margin-bottom: 0;
   }
 }
