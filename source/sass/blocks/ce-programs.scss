@@ -5,16 +5,30 @@
 .program {
   background-color: $ce-gray;
   margin-bottom: $margin-20;
-  padding: $margin-40 $margin-20 $margin-20 $margin-20;
+  padding: $margin-25 $margin-20 $margin-20 $margin-20;
+}
+
+.container__program {
+  position: relative;
+  display: block;
 }
 
 .program__image {
-  position: absolute;
-  top: 25px;
+  display: inline-block;
+  // top: 0;
   width: 50px;
   height: 50px;
   background: $ce-btn-green;
   border-radius: 50%;
+
+  // &::after {
+  //   position: absolute;
+  //   top: 25px;
+  //   width: 50px;
+  //   height: 50px;
+  //   background: $ce-btn-green;
+  //   border-radius: 50%;
+  // }
 }
 
 .program__title {
@@ -22,6 +36,7 @@
   line-height: 1;
   font-weight: normal;
   padding-left: $margin-70;
+  margin-top: -$margin-40;
   margin-bottom: $margin-35;
 }
 
@@ -32,6 +47,7 @@
 }
 
 .btn--program {
+  position: relative;
   text-align: left;
   color: $ce-text-black;
   padding-left: 0;
@@ -41,9 +57,11 @@
   &::after {
     content: "";
     position: absolute;
+    margin-left: $margin-15;
     width: 25px;
     height: 10px;
-    background: url("img/icon-right-arrow-long.svg") no-repeat center;
+    bottom: 40%;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
   }
 }
 
@@ -59,8 +77,13 @@
     padding: $margin-80 $margin-315 $margin-55 $margin-55;
   }
 
+  .container__program {
+    position: relative;
+  }
+
   .program__image {
-    right: 90px;
+    position: absolute;
+    right: 60px;
     top: 90px;
     width: 200px;
     height: 200px;

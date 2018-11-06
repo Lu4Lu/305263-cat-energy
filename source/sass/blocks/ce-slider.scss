@@ -52,7 +52,6 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    // margin-bottom: $margin-65;
   }
 
   .btn {
@@ -80,7 +79,7 @@
     background-color: $ce-gray-dark;
     padding: 0;
 
-    &::before {
+    &::after {
       position: absolute;
       width: 35px;
       height: 35px;
@@ -89,7 +88,7 @@
       bottom: 0;
       right: 0;
       border-radius: 50%;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       border: solid 1px $ce-gray-dark;
       background-color: $ce-white;
     }
