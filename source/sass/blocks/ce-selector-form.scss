@@ -4,7 +4,6 @@
 }
 
 .selector-form__element {
-  padding-bottom: $margin-10;
   margin-bottom: $margin-30;
   padding-bottom: 0;
 
@@ -54,7 +53,7 @@
 }
 
 .selector-form__title {
-  padding-right: $margin-65;
+  // padding-right: $margin-65;
   margin-bottom: $margin-30;
   padding-left: $margin-20;
   padding-right: $margin-20;
@@ -166,9 +165,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .selector-form {
-  }
-
   .selector-form__row {
     display: flex;
     flex-direction: row;
