@@ -102,11 +102,26 @@
     bottom: 0;
     right: 0;
     left: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: $ce-white;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .slider__toggle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     width: 10px;
     height: 10px;
     margin: auto;
     border-radius: 50%;
     background-color: $ce-btn-green;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   }
 }
